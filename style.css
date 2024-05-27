@@ -1,0 +1,150 @@
+/* 
+Seletor{
+    propriedade: valor;
+}
+*/
+/*
+@font-face {
+    font-family: 'fonte_principal';
+    src: url(dracula.ttf);
+}
+*/
+
+/*
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+*/
+
+body {
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+h1 {
+    margin: 0;
+    color: #250055;
+    font-size: 54px;
+    /*font-family: 'principal';*/
+    line-height: 90%; /*altura da linha*/
+}
+
+h2{
+    margin: 0;
+    color: #666666;
+    font-size: 24px;
+    line-height: 100%; /*altura da linha*/
+}
+
+p{
+    color: #666666;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 120%;
+    
+}
+
+img{
+    border-image-outset: 5px ;
+}
+
+.header{
+    background-color: red;
+    /*
+    width: 100%; 
+    height: 180px;
+    */
+    /* padding é um espaçamento interno */
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+
+.header img{
+    margin-left: 30px;
+    width: 200px;  /*Tamanho da imagem (altura x largura) */
+    border-radius: 50%; /*colocar a imagem redonda */
+
+}
+
+
+.menu a{
+    color: black;
+    margin-right: 20PX;
+    text-decoration:none ;
+    font-size: 20px;
+    /* Este comando usado nesta caixa (box) faz com que o comando transforms funcione abaixo */
+    display: inline-block; 
+}
+
+/* hover só funciona quando passa o mouse em cima */
+.menu a:hover{
+    color: yellow;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.content{
+    /*width: 1140px;*/
+    
+    /*margin-left: 113px;
+    margin-right: 113px;
+    margin-top: 80px;
+    margin-bottom: 80px;*/
+
+    margin: 80px 113px; /* 1º valor vertical (top/bottom) e 2º valor horizontal(esquerda direita) */
+
+
+}
+.footer{
+    background-color: red;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+/* Alterações para telas de até 550px */
+@media(max-width: 550px){
+    .header{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .menu a{
+        display: block;
+    }
+}
+/* para impressão */
+@media print{
+    .menu{
+        display: none; /* retira o menu na impressão */
+    }
+}
