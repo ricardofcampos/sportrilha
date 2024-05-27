@@ -141,6 +141,13 @@ img{
     .menu a{
         display: block;
     }
+
+    .content{
+        margin: 10px 10px; /* 1º valor vertical (top/bottom) e 2º valor horizontal(esquerda direita) */
+    }
+    
+
+
 }
 /* para impressão */
 @media print{
